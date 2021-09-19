@@ -1,7 +1,6 @@
 console.log("hello world!");
 function sum(param) {
-  var i;
-  var sum = 0;
+  let sum = 0;
   for (i = 1; i <= param; i++) {
     sum = sum + i;
   }
