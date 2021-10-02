@@ -15,8 +15,10 @@ console.log("after");
 - 程式 1: 請問以下執行結果為何？ after 會在什麼數字後印出？ 為什麼？
 
 - 提示: 手動自己畫畫看整段程式的執行過程，call stack 的變化為何？
-  ![Alt text](https://drive.google.com/file/d/1MoWMHFARbjasreE4hXKQY2IpTR8tBhmh/view)
-  之後執行 `console.log(idx)`，從 Call stack 移除 `console.log(idx)`，再執行 `readData(idx)`，再從 Call stack 移除 `readData(idx)`，最後執行 `console.log("after")`，清空 Call stack。
+
+![image text](practice/img/1.jpeg "image Title")
+
+之後執行 `console.log(idx)`，從 Call stack 移除 `console.log(idx)`，再執行 `readData(idx)`，再從 Call stack 移除 `readData(idx)`，最後執行 `console.log("after")`，清空 Call stack。
 
 `function readData(idx) {
 for (let i = 0; i < 100; i++) {
