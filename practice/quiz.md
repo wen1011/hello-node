@@ -16,7 +16,7 @@ console.log("after");
 
 - 提示: 手動自己畫畫看整段程式的執行過程，call stack 的變化為何？
 
-![Alt text](https://drive.google.com/file/d/1MoWMHFARbjasreE4hXKQY2IpTR8tBhmh/view?usp=sharing)
+![system schema](https://drive.google.com/file/d/1MoWMHFARbjasreE4hXKQY2IpTR8tBhmh/view?usp=sharing)
 之後執行 `console.log(idx)`，從 Call stack 移除 `console.log(idx)`，再執行 `readData(idx)`，再從 Call stack 移除 `readData(idx)`，最後執行 `console.log("after")`，清空 Call stack。
 
 `function readData(idx) {
