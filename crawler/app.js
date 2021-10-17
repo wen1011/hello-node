@@ -1,5 +1,9 @@
 const axios = require("axios");
 
+let stockCode = "2330";
+let today = "20211017";
+let format = "json";
+
 // "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=" + format + "&date=" + today + "&stockNo=" + stockCode
 // `https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=${format}&date=${today}&stockNo=${stockCode}`
 
@@ -21,9 +25,6 @@ const axios = require("axios");
 //axios
 //async function會回傳promise
 async function getData() {
-  let stockCode = "2330";
-  let today = "20211017";
-  let format = "json";
   try {
     let result = await axios.get(
       "https://www.twse.com.tw/exchangeReport/STOCK_DAY",
@@ -35,7 +36,7 @@ async function getData() {
         },
       }
     );
-    console.log(result.date);
+    console.log(result.data);
   } catch (err) {
     console.error(err);
   }
